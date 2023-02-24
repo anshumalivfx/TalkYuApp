@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42C336D0254FF6B213C99BB5 /* Pods_TalkYu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF17DE5445457E1F28046D /* Pods_TalkYu.framework */; };
+		7A7BD80829A9200900BC248C /* RegistrationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD80729A9200900BC248C /* RegistrationPageViewController.m */; };
 		7AB58F8929A8F06C003D07F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB58F8829A8F06C003D07F6 /* AppDelegate.m */; };
 		7AB58F8C29A8F06C003D07F6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB58F8B29A8F06C003D07F6 /* LoginViewController.m */; };
 		7AB58F8E29A8F06E003D07F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB58F8D29A8F06E003D07F6 /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		1BCF17DE5445457E1F28046D /* Pods_TalkYu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkYu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E78339ADE4E81AD82BF9CC /* Pods-TalkYu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkYu.debug.xcconfig"; path = "Target Support Files/Pods-TalkYu/Pods-TalkYu.debug.xcconfig"; sourceTree = "<group>"; };
+		7A7BD80629A9200900BC248C /* RegistrationPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationPageViewController.h; sourceTree = "<group>"; };
+		7A7BD80729A9200900BC248C /* RegistrationPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationPageViewController.m; sourceTree = "<group>"; };
 		7AB58F8429A8F06C003D07F6 /* TalkYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB58F8729A8F06C003D07F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AB58F8829A8F06C003D07F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 				7AB58F9B29A8FC80003D07F6 /* MainPageViewController.m */,
 				7AB58F8B29A8F06C003D07F6 /* LoginViewController.m */,
 				7AB58FA429A912FB003D07F6 /* SidebarViewController.m */,
+				7A7BD80729A9200900BC248C /* RegistrationPageViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +107,7 @@
 				7AB58F8729A8F06C003D07F6 /* AppDelegate.h */,
 				7AB58F8A29A8F06C003D07F6 /* LoginViewController.h */,
 				7AB58FA329A912FB003D07F6 /* SidebarViewController.h */,
+				7A7BD80629A9200900BC248C /* RegistrationPageViewController.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -113,7 +118,6 @@
 				64E78339ADE4E81AD82BF9CC /* Pods-TalkYu.debug.xcconfig */,
 				D0707EE881DD7F6D50790A3C /* Pods-TalkYu.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,6 +248,7 @@
 				7AB58F9D29A8FC80003D07F6 /* MainPageViewController.m in Sources */,
 				7AB58F8C29A8F06C003D07F6 /* LoginViewController.m in Sources */,
 				7AB58F9329A8F06E003D07F6 /* main.m in Sources */,
+				7A7BD80829A9200900BC248C /* RegistrationPageViewController.m in Sources */,
 				7AB58F8929A8F06C003D07F6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

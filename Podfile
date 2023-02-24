@@ -5,7 +5,8 @@ target 'TalkYu' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Crashlytics'
-  pod 'FirebaseCore'	
+  pod 'FirebaseCore'
+  pod 'FirebaseAuth'	
   # Pods for TalkYu
 
 end

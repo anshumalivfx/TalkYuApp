@@ -6,7 +6,7 @@
 //
 
 #import "MainPageViewController.h"
-
+#import <FirebaseAuth/FirebaseAuth.h>
 
 @interface MainPageWindow : NSWindowController
 

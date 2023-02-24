@@ -809,5 +809,43 @@
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="gJH-Iq-wmB">
+            <objects>
+                <windowController id="RpI-ul-187" customClass="RegistrationWindowController" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="4Mf-hD-8Dj">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
+                        <view key="contentView" id="8NH-5j-Wcv">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="RpI-ul-187" id="lfx-cK-0Qo"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="kX6-rR-Ruw" kind="relationship" relationship="window.shadowedContentViewController" id="k5F-QY-Yc4"/>
+                    </connections>
+                </windowController>
+                <customObject id="bQm-AI-Mfe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="1054"/>
+        </scene>
+        <!--Registration Page View Controller-->
+        <scene sceneID="gDd-Cy-ghk">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationView" id="kX6-rR-Ruw" customClass="RegistrationPageViewController" sceneMemberID="viewController">
+                    <view key="view" id="p7e-5U-7eK">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="DgG-px-PLB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="1426"/>
+        </scene>
     </scenes>
 </document>

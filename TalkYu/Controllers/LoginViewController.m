@@ -7,6 +7,7 @@
 
 #import "LoginViewController.h"
 #include <CoreImage/CoreImage.h>
+#include <QuartzCore/QuartzCore.h>
 
 @interface LoginWindowController : NSWindowController
 
@@ -84,7 +85,28 @@
 }
 
 - (IBAction)registrationAction:(id)sender {
+//    self.view.window.contentViewController = controller;
+    NSRect currentFrame = self.view.window.frame;
+
+    // Calculate the new window frame
+    NSRect newFrame = NSMakeRect(currentFrame.origin.x, currentFrame.origin.y, 300, 400);
+
+    // Set the transition style
+    [CATransaction begin];
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromRight;
+    [self.view.window.contentView.layer addAnimation:transition forKey:kCATransition];
+
+    // Set the new window frame with animation
     
+
+    // Set the new content view controller after the animation completes
+    [CATransaction setCompletionBlock:^{
+        NSViewController *controller = [[self storyboard] instantiateControllerWithIdentifier:@"RegistrationView"];
+        self.view.window.contentViewController = controller;
+    }];
+    [CATransaction commit];
 }
 
 - (IBAction)loginButtonClicked:(id)sender {
