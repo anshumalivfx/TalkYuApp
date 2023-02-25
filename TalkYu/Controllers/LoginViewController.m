@@ -8,6 +8,8 @@
 #import "LoginViewController.h"
 #include <CoreImage/CoreImage.h>
 #include <QuartzCore/QuartzCore.h>
+#include "RegistrationPageViewController.h"
+@import FirebaseAuth;
 
 @interface LoginWindowController : NSWindowController
 
@@ -54,6 +56,7 @@
     
     [super viewDidLoad];
     
+    
     self.usernameField = [[NSTextField alloc] initWithFrame:NSMakeRect(150, 200, 200, 25)];
     self.usernameField.placeholderString = @"Username";
     self.usernameField.autoresizingMask = NSViewMinXMargin | NSViewMaxXMargin | NSViewMinYMargin;
@@ -85,28 +88,50 @@
 }
 
 - (IBAction)registrationAction:(id)sender {
+//    NSViewController *controller = [[self.storyboard init] instantiateInitialControllerWithCreator:];
 //    self.view.window.contentViewController = controller;
-    NSRect currentFrame = self.view.window.frame;
-
-    // Calculate the new window frame
-    NSRect newFrame = NSMakeRect(currentFrame.origin.x, currentFrame.origin.y, 300, 400);
-
-    // Set the transition style
-    [CATransaction begin];
-    CATransition *transition = [CATransition animation];
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromRight;
-    [self.view.window.contentView.layer addAnimation:transition forKey:kCATransition];
-
-    // Set the new window frame with animation
+//    NSRect currentFrame = self.view.window.frame;
+//    NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+//
+//        // Instantiate the RegistrationView using the storyboard ID
+//        RegistrationPageViewController *registrationView = [storyboard instantiateControllerWithIdentifier:@"RegistrationView"];
+//
+//        // Get a reference to the current contentViewController
+//        NSViewController *contentViewController = [self.view.window contentViewController];
+//
+//        // Replace the current contentViewController with the RegistrationView
+//        [self.view.window setContentView:[registrationView view]];
+//
+//
+//    [self.view.window setFrame:NSMakeRect(300, 100, 300, 600) display:YES animate:YES];
+//        // Optional: Animate the transition
+//        [[contentViewController view] replaceSubview:[self.view.window contentView] with:[registrationView view]];
+//    RegistrationPageViewController *win = [[RegistrationPageViewController alloc] init];
+//
+//    // Calculate the new window frame
+//    NSRect newFrame = NSMakeRect(currentFrame.origin.x, currentFrame.origin.y, 300, 800);
+//
+//    // Set the transition style
+//    [CATransaction begin];
+//    CATransition *transition = [CATransition animation];
+//    transition.type = kCATransitionPush;
+//    transition.subtype = kCATransitionFromRight;
+//    [self.view.window.contentView.layer addAnimation:transition forKey:kCATransition];
+//
+//    // Set the new window frame with animation
+//
+//
+//    // Set the new content view controller after the animation completes
+//    [CATransaction setCompletionBlock:^{
+//        [self.view.window setFrame:newFrame display:YES animate:YES];
+//        NSViewController *controller = [[self storyboard] instantiateControllerWithIdentifier:@"RegistrationView"];
+//        self.view.window.contentViewController = controller;
+//    }];
+//    [CATransaction commit];
     
-
-    // Set the new content view controller after the animation completes
-    [CATransaction setCompletionBlock:^{
-        NSViewController *controller = [[self storyboard] instantiateControllerWithIdentifier:@"RegistrationView"];
-        self.view.window.contentViewController = controller;
-    }];
-    [CATransaction commit];
+    
+    
+    [self performSegueWithIdentifier:@"registrationseg" sender:self];
 }
 
 - (IBAction)loginButtonClicked:(id)sender {

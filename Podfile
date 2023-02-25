@@ -7,6 +7,7 @@ target 'TalkYu' do
   pod 'Crashlytics'
   pod 'FirebaseCore'
   pod 'FirebaseAuth'	
+  pod 'CustomSegue'
   # Pods for TalkYu
 
 end

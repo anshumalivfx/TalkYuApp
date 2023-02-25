@@ -16,6 +16,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSAppearance *darkAquaAppearance = [NSAppearance appearanceNamed:NSAppearanceNameDarkAqua];
+    [NSApplication sharedApplication].appearance = darkAquaAppearance;
 }
 
 

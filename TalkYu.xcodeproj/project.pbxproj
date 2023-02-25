@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		42C336D0254FF6B213C99BB5 /* Pods_TalkYu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF17DE5445457E1F28046D /* Pods_TalkYu.framework */; };
 		7A7BD80829A9200900BC248C /* RegistrationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD80729A9200900BC248C /* RegistrationPageViewController.m */; };
+		7A7BD80C29AA0B0900BC248C /* NewMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7BD80B29AA0B0900BC248C /* NewMainViewController.swift */; };
 		7AB58F8929A8F06C003D07F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB58F8829A8F06C003D07F6 /* AppDelegate.m */; };
 		7AB58F8C29A8F06C003D07F6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB58F8B29A8F06C003D07F6 /* LoginViewController.m */; };
 		7AB58F8E29A8F06E003D07F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB58F8D29A8F06E003D07F6 /* Assets.xcassets */; };
@@ -25,6 +26,9 @@
 		64E78339ADE4E81AD82BF9CC /* Pods-TalkYu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkYu.debug.xcconfig"; path = "Target Support Files/Pods-TalkYu/Pods-TalkYu.debug.xcconfig"; sourceTree = "<group>"; };
 		7A7BD80629A9200900BC248C /* RegistrationPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationPageViewController.h; sourceTree = "<group>"; };
 		7A7BD80729A9200900BC248C /* RegistrationPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationPageViewController.m; sourceTree = "<group>"; };
+		7A7BD80929A9EEA000BC248C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7A7BD80A29AA0B0800BC248C /* TalkYu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkYu-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A7BD80B29AA0B0900BC248C /* NewMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMainViewController.swift; sourceTree = "<group>"; };
 		7AB58F8429A8F06C003D07F6 /* TalkYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB58F8729A8F06C003D07F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AB58F8829A8F06C003D07F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		7AB58F8629A8F06C003D07F6 /* TalkYu */ = {
 			isa = PBXGroup;
 			children = (
+				7A7BD80929A9EEA000BC248C /* Info.plist */,
 				7AB58FA029A8FC96003D07F6 /* Headers */,
 				7AB58F9F29A8FC88003D07F6 /* Controllers */,
 				7AB58F8829A8F06C003D07F6 /* AppDelegate.m */,
@@ -96,6 +101,7 @@
 				7AB58F8B29A8F06C003D07F6 /* LoginViewController.m */,
 				7AB58FA429A912FB003D07F6 /* SidebarViewController.m */,
 				7A7BD80729A9200900BC248C /* RegistrationPageViewController.m */,
+				7A7BD80B29AA0B0900BC248C /* NewMainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +109,7 @@
 		7AB58FA029A8FC96003D07F6 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				7A7BD80A29AA0B0800BC248C /* TalkYu-Bridging-Header.h */,
 				7AB58F9A29A8FC80003D07F6 /* MainPageViewController.h */,
 				7AB58F8729A8F06C003D07F6 /* AppDelegate.h */,
 				7AB58F8A29A8F06C003D07F6 /* LoginViewController.h */,
@@ -162,6 +169,7 @@
 				TargetAttributes = {
 					7AB58F8329A8F06C003D07F6 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -248,6 +256,7 @@
 				7AB58F9D29A8FC80003D07F6 /* MainPageViewController.m in Sources */,
 				7AB58F8C29A8F06C003D07F6 /* LoginViewController.m in Sources */,
 				7AB58F9329A8F06E003D07F6 /* main.m in Sources */,
+				7A7BD80C29AA0B0900BC248C /* NewMainViewController.swift in Sources */,
 				7A7BD80829A9200900BC248C /* RegistrationPageViewController.m in Sources */,
 				7AB58F8929A8F06C003D07F6 /* AppDelegate.m in Sources */,
 			);
@@ -382,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TalkYu/TalkYu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -389,9 +399,11 @@
 				DEVELOPMENT_TEAM = 9V43N6T968;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkYu/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -400,6 +412,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anshumali.TalkYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TalkYu/TalkYu/Headers/TalkYu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -409,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TalkYu/TalkYu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -416,9 +432,11 @@
 				DEVELOPMENT_TEAM = 9V43N6T968;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkYu/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -427,6 +445,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anshumali.TalkYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TalkYu/TalkYu/Headers/TalkYu-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

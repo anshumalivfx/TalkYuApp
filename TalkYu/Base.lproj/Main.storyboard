@@ -740,7 +740,7 @@
                 </windowController>
                 <customObject id="6LI-bf-YNE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="292"/>
+            <point key="canvasLocation" x="763" y="311"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="jsX-CP-BZw">
@@ -761,7 +761,7 @@
                 </splitViewController>
                 <customObject id="m81-dI-GN9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443" y="296"/>
+            <point key="canvasLocation" x="1444" y="311"/>
         </scene>
         <!--Sidebar View Controller-->
         <scene sceneID="npk-RP-bcf">
@@ -776,7 +776,7 @@
                 </viewController>
                 <customObject id="2gX-MG-rb6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1963" y="110"/>
+            <point key="canvasLocation" x="1963" y="61"/>
         </scene>
         <!--Main Page View Controller-->
         <scene sceneID="i1M-er-T88">
@@ -791,18 +791,19 @@
                 </viewController>
                 <customObject id="I2t-hc-PRt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2039" y="482"/>
+            <point key="canvasLocation" x="2039" y="546"/>
         </scene>
         <!--Login-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Login" id="XfG-lQ-9wD" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController title="Login" storyboardIdentifier="LoginView" id="XfG-lQ-9wD" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                     <connections>
-                        <segue destination="gmC-uR-kQb" kind="modal" id="uI7-eE-7dH"/>
+                        <segue destination="gmC-uR-kQb" kind="modal" identifier="toMainView" id="uI7-eE-7dH"/>
+                        <segue destination="RpI-ul-187" kind="modal" identifier="registrationseg" id="Vrm-jr-M5D"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -812,7 +813,7 @@
         <!--Window Controller-->
         <scene sceneID="gJH-Iq-wmB">
             <objects>
-                <windowController id="RpI-ul-187" customClass="RegistrationWindowController" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="RpI-ul-187" customClass="RegistrationWindowController" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="4Mf-hD-8Dj">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -832,7 +833,7 @@
                 </windowController>
                 <customObject id="bQm-AI-Mfe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="1054"/>
+            <point key="canvasLocation" x="75" y="1144"/>
         </scene>
         <!--Registration Page View Controller-->
         <scene sceneID="gDd-Cy-ghk">
@@ -845,7 +846,7 @@
                 </viewController>
                 <customObject id="DgG-px-PLB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="1426"/>
+            <point key="canvasLocation" x="75" y="1608"/>
         </scene>
     </scenes>
 </document>

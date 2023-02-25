@@ -1,6 +1,7 @@
 PODS:
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
+  - CustomSegue (4.0.0)
   - Fabric (1.10.2)
   - FirebaseAuth (10.5.0):
     - FirebaseCore (~> 10.0)
@@ -33,12 +34,14 @@ PODS:
 
 DEPENDENCIES:
   - Crashlytics
+  - CustomSegue
   - FirebaseAuth
   - FirebaseCore
 
 SPEC REPOS:
   trunk:
     - Crashlytics
+    - CustomSegue
     - Fabric
     - FirebaseAuth
     - FirebaseCore
@@ -49,6 +52,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  CustomSegue: 10976268295d8b38c0b5ad191434b99b55da3ef1
   Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
   FirebaseAuth: 1028326bcaa7a61391386e74b9078cc558ae14f1
   FirebaseCore: 324b8d182d9ff7e3f6d1fa2f04b082d1c7a3e366
@@ -57,6 +61,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: c9e714f7eec91a55641e2bab9f45fd83a219b882
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
 
-PODFILE CHECKSUM: b7d3c343706537d1379afdce0ed3c5e55e5c5d56
+PODFILE CHECKSUM: 343d84efe9134e28b3c960f9574d14a4537762a3
 
 COCOAPODS: 1.11.3
